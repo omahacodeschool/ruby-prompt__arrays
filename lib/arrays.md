@@ -7,6 +7,10 @@ instructor_notes: Feel free to re-organize the headings (or add/remove headings)
 
 An array is a data object in Ruby that is comprised of an ordered list of some sort of data.  You can fill an array with fixnums, floats, or strings.  You can mix and match.  It's up to the user really.  
 
+Could one of the items in an Array be an Array itself?
+
+Yes, one of the items in an array could be an array itself.  While I'm a bit fuzzy on the possible uses for such a beast, making an array an item in another array creates a two-dimensional array.  Though it's a bit tricky to visualize what you're doing after you've added a third dimension to the mix, by making items in the array that is in another array arrays themselves, I have heard arrays of 7 or 9 dimensions mentioned in association with encryption and codes.  
+
 # What are some examples of information that would be Arrays as opposed to some other data type?
 
 Arrays are great for making lists of data to iterate through.  If you want to do something to a collection of data repeatedly, creating a list and looping through it is great for that.  A array is a good way to collect a big chunk of data and then organize it.  So, let's say you've got an unordered list of names and you want to bring some order to the chaos.  If you have that list as an array you can apply the sort method to it and voila you've got a list in alphabetical order.  If you had a collection of weather data and you wanted to order it from lowest temperature to highest or compare it to another collection of data, you could put it all in an array and accomplish those things via some of the methods available to us for manipulating lists.
@@ -14,6 +18,11 @@ Arrays are great for making lists of data to iterate through.  If you want to do
 # What is one way, using Ruby, to retrieve the 6th element in an Array? How about the 8th element? What happens if you try to retrieve the value of the _9999th_ element (or some element that doesn't exist in the array)?
 
 A simple way to retrieve a given element in an array is to indicate the numerical position of an element in the array.  So, if you've got an array, array_1 = [1,2,3,4,5,6,7,8,9] and you wanted it to return 6, you'd tell the computer the numerical position of 6 in array_1 like so array_1[5].  This might look a bit odd as when counting from 1 to 6, 6 is obviously in the sixth position.  However, as far as the computer is concerned, the count starts with 0, not 1.  So, if you're looking for the first element of array_1, you'd tell the computer array_1[0].  If you wanted the 8th element, same thing.  If you wanted the 9999th element, it'd return a blank.  You can actually create empty arrays, as such, I think that an array is an ever expandable list.  So, if you ask it to retrieve an element that's not in the list, there's a blank space for it, it's just not filled.  Not entirely sure that's how it works, but that's how it made sense to me.
+
+Can you cite the specific term for the value in that blank space?
+
+"nil", evidently, when considering arrays, values that aren't explicitly set to something are set as "nil".  Thus, when you ask for the 9999th element in a given array, assuming you don't have anything set to that particular position, Ruby will return "nil" as that's sort of the default value of a blank space in an array.  Sound about right?
+
 
 # The previous question asks about finding, for example, the 6th element in an Array. Is it possible to find the **-6th** (Notice the negative symbol!) element in an Array? What does that even mean?
 
