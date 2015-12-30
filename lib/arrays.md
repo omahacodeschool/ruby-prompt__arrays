@@ -55,10 +55,10 @@ puts arr.join(", ")
 
 # What do the methods `push`, `pop`, `shift`, and `unshift` do?
 
-Push adds an element to an array
-Pop removes and returns the last element of an array
+Push adds an element to an array.
+Pop removes and returns the last element of an array.
 Shift removes and returns the first element of an array. Shifting the remaining elements down.
-Unshift will add a new element to the beginning of the array
+Unshift will add a new element to the beginning of the array.
 
 # How do you determine how many elements are in an Array?
 Using .length
