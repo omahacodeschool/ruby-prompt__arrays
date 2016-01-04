@@ -38,6 +38,9 @@ Yes. It means the - is calling to the last element of an array as -1 so it will 
 
 By using the each and map methods.
 
+The each method runs each element through the block and returns the value/s you are calling for.
+With map method the block calls to each element the same way as in the each method but returns the value/s in a new array.
+
 ["hi", "bye"].map { |s| s.reverse } returns ["ih", "eyb"]
 
 # How do you add elements to an Array?
