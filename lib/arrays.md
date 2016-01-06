@@ -10,7 +10,7 @@ Each object in the array has an associated index with the first object's index b
 
 # What are some examples of information that would be Arrays as opposed to some other data type?
 
-A list a cat's favorite things. All 12 months. The alphabet. Dinosaur types. Prime numbers. 
+A list of a cat's favorite things. All 12 months. The alphabet. Dinosaur types. Prime numbers.
 
 # What is one way, using Ruby, to retrieve the 6th element in an Array? How about the 8th element? What happens if you try to retrieve the value of the _9999th_ element (or some element that doesn't exist in the array)?
 Same concept as in strings. the first element in an array is in the 0 position, second is in the 1 position and so on.
@@ -63,6 +63,12 @@ The .map method creates a new array based on the original array, but changes the
     }
 
     => ["Laura", "Florence", "Tori"]
+    
+or
+
+    arr = ["Laura", "Fiona", "Tori"]
+    arr[1] = "Florence"
+    
 
 # What do the methods `push`, `pop`, `shift`, and `unshift` do?
 
@@ -79,9 +85,17 @@ Use the count operation:
         => 17
 
 # How would you reverse the order of elements in an Array?
+It wasn't clear whether or not you wanted a permanent change to the order of the elements so that's why I used this first method to list the elements in reverse:
 
     arr = ["Laura", "Florence", "Tori"]
     arr.reverse_each { |x| puts x }
+    
+But if you want a new array with the order of the elements reversed, then use this:
+
+
+    arr = ["Laura", "Florence", "Tori"]
+    reversed_order = arr.reverse
+    
 
 # How would you convert a String `"Sumeet Jain"` into an Array `["Sumeet", "Jain"]`? How about to `["S", "u", "m", "e", "e", "t", " ", "J", "a", "i", "n"]`? How would you convert the Array back into a String?
 
