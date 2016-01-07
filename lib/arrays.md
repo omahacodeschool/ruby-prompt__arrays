@@ -60,6 +60,47 @@ Names.map! do |x| x=="Fiona"? NewName: x
 end
 puts Names
 
+#BETTER WAY TO DO THIS
+#VERSION 1
+#Thank you for the help. This is the most simple way
+#to replace "Fiona" with "Florence." It's main limit is you have
+#to already know where "Fiona" is in the array. So I did VERSION 2 and 3.
+Names = ["Laura", "Fiona", "Tori"]
+Names[1]="Florence"
+puts Names #(The output here is Laura, Florence, Tori on separate lines.)
+
+#VERSION 2
+#This was an intermediate stage, and I just wanted
+#to save it in my notes. 
+#I wanted to do a scalable version. If there were 10,632 names in 
+#the array instead of 3, I wanted to be able to find the value
+#"Fiona" in the list, and replace it with "Florence."
+#With this one, I thought there must be a method to find
+#out what position in the array would go with the value "Fiona" and I found "index." 
+Names = ["Laura", "Fiona", "Tori"]
+Names.index "Fiona" #This returned the value 1 in green text in repl.it.
+
+#VERSION 3
+#On a hunch I put [Names.index "Fiona"], which had returned "1" in green type,
+#into the space where I had the [1] in version 1. 
+#It made the substitution I was looking for, and seems like
+#it would work in a much larger array. 
+
+Names = ["Laura", "Fiona", "Tori"]
+Names[Names.index "Fiona"]="Florence"
+puts Names #(The output here is the same as Version 1. This line is just my way of finding out if it worked.)
+
+
+
+
+
+
+
+
+
+
+
+
 # What do the methods `push`, `pop`, `shift`, and `unshift` do?
 
 "Push" adds items after the last item in an array. "Pop" is the opposite of "Push." It removes the last item in an array. If there is a
