@@ -46,4 +46,4 @@ puts name.reverse
 
 # How would you convert a String `"Sumeet Jain"` into an Array `["Sumeet", "Jain"]`? How about to `["S", "u", "m", "e", "e", "t", " ", "J", "a", "i", "n"]`? How would you convert the Array back into a String?
 
-'Sumeet Jain'.split(' ') and 'Sumeet Jain'.split("")
+'Sumeet Jain'.split(' ') and 'Sumeet Jain'.split("").   Using .join after either array would convert it back to a string.
