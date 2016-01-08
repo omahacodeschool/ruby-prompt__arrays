@@ -35,6 +35,15 @@ array = ["Laura", "Fiona", "Tori"]
 array.replace(["Laura", "Florence", "Tori"]) 
 array
 
+Oooops – just realized this one was still open. Thanks for the extra guidance on how to do this. I get it now. To replace just one element with another, you can do it the same way you can assign it a value in the first place:
+
+this_array = Array.new
+this_array[0] = "food"
+this_array[1] = "clothing"
+this_array[2] = "shelter"
+this_array[0] = "netflix"      # if you decide your priorities have changed, you just re-assign that position
+this_array
+
 # What do the methods `push`, `pop`, `shift`, and `unshift` do?
 
 Push adds something to the end of an array. Pop removes something from the end of an array. Shift will take something off of the beginning of an array (or .shift(2) will chop off the first two items – or however many correspond to the number you put in the parentheses). Unshift has the opposite effect and allows you to add an element or elements to the beginning of an array.
