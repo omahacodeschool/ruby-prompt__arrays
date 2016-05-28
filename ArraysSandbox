@@ -1,0 +1,3 @@
+names = ["Laura", "Fiona", "Tori"]
+names[1].replace("Florence")
+puts names
