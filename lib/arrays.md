@@ -29,7 +29,7 @@ There are multiple ways to add elements to an array. Elements of one array can b
 
 # Given the Array `["Laura", "Fiona", "Tori"]`, how would you replace `"Fiona"` with `"Florence"` so that you end up with `["Laura", "Florence", "Tori"]`?
 
-The simplest way I've found so far to replace an element in an array is to iterate through the array with the .each method, and call the .sub method on each element. For example, for the above array, I would write array.each do |x| x.sub("Fiona", "Florence") end. 
+A value in an array can be changed in a way that is similar to looking up the value using its index. In the above array, array[1] would return "Fiona", and array[1] = "Florence" would reassign the value of "Florence" to the index 1. I actually discovered this while playing with replacing elements in hashes. The way I had initially found to replace an element in an array was to iterate through the array with the .each method, and call the .sub method on each element. For example, for the above array, I would write array.each do |x| x.sub("Fiona", "Florence") end. 
 
 # What do the methods `push`, `pop`, `shift`, and `unshift` do?
 
