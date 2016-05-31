@@ -36,12 +36,21 @@ instructor_notes: Feel free to re-organize the headings (or add/remove headings)
 # How would you perform an operation on every element inside an Array?
 
     # One way to perform an operation on every element inside an Array would be to
-    # use the map method. This will create a new array. It you want it to replace
-    # the elements instead of making a new array use map! method.
+    # use the map method. This will create a new array. If you want it to replace
+    # the elements instead of making a new array use map! method. 
+    
+    # If you want to perform the operation without altering the original array use
+    # map, however, if you want to modify all of the elements of the array use map!
+    # map will return the new array, and map! will return the modified array.
     
     #example: x = [1,2,3]
               x.map! { |x| x*2}
               print x  #=> [2,4,6]
+              
+    # The each method will also perform an operation on every element inside an array
+    # The each method can be used if you want to perform an operation without 
+    # changing an array. This method will perform the block of 
+    # code, but return the original array.
 
 # How do you add elements to an Array?
 
