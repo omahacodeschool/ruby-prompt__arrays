@@ -22,6 +22,7 @@ It is possible to find the -6th element in the array.  Arrays can identify the e
 # How would you perform an operation on every element inside an Array?
 
 A way to perform an operation on every element inside an array would be to use the map! function. Map! allows for the new edited versions of the elements to replace the elements in their place.  So, if we were to write alphabet.map! { |x| x + "!" } it would return #=> ['a!', 'b!', 'c!', 'd!', 'e!', 'f!', 'g!', 'h!', 'i!', 'j!', 'k!', 'l!', 'm!'].
+Of course, there are times where we would not want to permanently alter an array, but rather return a new, edited array (this answer is edited due to comments).  The map function would return a new array, whereas map! edits the existing one.  There would be times it would be useful to keep the original array around, and there would be times where we would want to have several edited versions of the original array, requiring map over map!.
 
 # How do you add elements to an Array?
 
@@ -57,7 +58,7 @@ To convert "Sumeet Jain" into ["S", "u", "m", "e", "e", "t", " ", "J", "a", "i",
 To convert the array back to a string, I would use the join method.  I would assign a name for the array jain = ["S", "u", "m", "e", "e", "t", " ", "J", "a", "i", "n"].
 I would write sumeet_jain = jain.join 
 puts sumeet_jain
-I guess I might need to add a space in?  I could, after printing, add a space between the different points in that string...
+If I need to convern the array sumeet_jain = ["Sumeet", "Jain"] I would have to use sumeet_jain.join(" ") to add a space between the different elements in the array.
 
 
 
